@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  jenkins1:
+    container_name: jenkins1
+    image: agenda:1.0
+    build:
+      context: $PWD/agenda_data
+      dockerfile: $PWD/Dockerfile
+    ports:
+      - 9091:80
+
